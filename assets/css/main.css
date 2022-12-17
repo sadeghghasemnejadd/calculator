@@ -33,6 +33,36 @@ body {
 
 .screen {
   height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2.4rem;
+  align-items: flex-end;
+  padding: 1.6rem;
+  overflow: hidden;
+  position: relative;
+}
+.screen__result {
+  display: flex;
+  font-size: 3.2rem;
+  gap: 3.2rem;
+}
+.screen__now {
+  display: flex;
+  gap: 2.4rem;
+  font-size: 2.4rem;
+}
+.screen__last {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  height: 50%;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+}
+.screen__last p {
+  opacity: 0.4;
 }
 
 .numbers {
