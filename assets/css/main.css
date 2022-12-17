@@ -5,6 +5,10 @@
   --color-gray: #e9ecef;
 }
 
+@font-face {
+  font-family: digit;
+  src: url("./../fonts/digital.ttf");
+}
 * {
   padding: 0;
   margin: 0;
@@ -13,6 +17,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: digit, sans-serif;
 }
 
 body {
@@ -73,6 +78,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
   gap: 1.6rem;
+  font-size: 2.4rem;
 }
 .numbers span {
   border-radius: 10rem;

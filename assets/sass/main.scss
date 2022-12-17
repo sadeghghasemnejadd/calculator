@@ -4,6 +4,10 @@
   --color-accent: #fcc419;
   --color-gray: #e9ecef;
 }
+@font-face {
+  font-family: digit;
+  src: url("./../fonts/digital.ttf");
+}
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +15,7 @@
 }
 html {
   font-size: 62.5%;
+  font-family: digit, sans-serif;
 }
 body {
   font-size: 1.6rem;
@@ -36,6 +41,7 @@ body {
   padding: 1.6rem;
   overflow: hidden;
   position: relative;
+
   &__result {
     display: flex;
     font-size: 3.2rem;
@@ -67,6 +73,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
   gap: 1.6rem;
+  font-size: 2.4rem;
   & span {
     border-radius: 10rem;
     display: flex;
