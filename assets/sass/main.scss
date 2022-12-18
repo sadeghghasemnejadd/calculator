@@ -25,7 +25,16 @@ body {
   align-items: center;
 }
 .main {
-  width: 20%;
+  min-width: 40rem;
+  @media only screen and (max-width: 37.5em) {
+    min-width: 30rem;
+  }
+  @media only screen and (max-width: 21em) {
+    min-width: 25rem;
+  }
+  @media only screen and (max-width: 15em) {
+    min-width: 20rem;
+  }
   height: 70rem;
   border-radius: 1rem;
   box-shadow: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.3);
